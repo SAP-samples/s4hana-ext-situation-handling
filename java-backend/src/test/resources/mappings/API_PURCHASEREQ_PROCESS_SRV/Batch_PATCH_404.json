@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/sap/opu/odata/sap/API_PURCHASEREQ_PROCESS_SRV/$batch",
+    "headers": {
+    	"Content-Type": {
+        	"equalTo": "multipart/mixed;boundary=BatchBoundary"
+      	},
+    	"X-CSRF-Token": {
+        	"equalTo": "expected-x-csrf-token"
+      	}	    
+	},
+	"bodyPatterns": [
+	    { "contains": "PATCH A_PurchaseRequisitionItem(PurchaseRequisition='NotExistPR',PurchaseRequisitionItem='10')" }
+	]
+  },
+  "response": {
+    "status": 202,
+    "headers": {
+      "Content-Type": "multipart/mixed; boundary=599865870B97B89F808CFDA8F7D818140",
+      "Content-Length": "725"
+    },
+    "bodyFileName": "API_PURCHASEREQ_PROCESS_SRV/Batch_PATCH_404.txt"
+  }
+}

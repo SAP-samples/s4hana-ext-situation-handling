@@ -1,0 +1,31 @@
+{
+	"request": {
+		"method": "POST",
+		"urlPattern": "/workflow-service/rest/v1/workflow-instances",
+		"bodyPatterns" : [ 
+			{
+	        	"equalToJson" : {
+	        		"definitionId" : "testDefinitionId",
+	        		"context": {
+	        			"SituationInstanceId": "testSituationInstanceId",
+	        			"SituationContextId": "testSituationContextId"
+	        		}
+	        	},
+		      "ignoreArrayOrder" : true,
+		      "ignoreExtraElements" : true
+	        }
+        ]
+	},
+	"response": {
+		"status": 201,
+		"jsonBody": {
+				"businessKey": "testSituationContextId",
+				"id": "testId",
+				"definitionId": "testDefinitionId",
+				"extraProperty": "shouldBeIgnored"
+		},				    
+		"headers": {
+			"Content-Type": "application/json"
+		}
+	}
+}

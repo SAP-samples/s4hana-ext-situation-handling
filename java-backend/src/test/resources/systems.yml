@@ -1,0 +1,10 @@
+--- 
+# unit tests configuration for MockUtils of S/4HANA Cloud SDK
+# TODO replace with real user credentials if you want to test against real systems and not Wiremock
+erp:
+  default: "ErpQueryEndpoint"
+  systems:
+    - alias: "bpmworkflowruntime"
+      uri: "http://127.0.0.1:31337"
+    - alias: "ErpQueryEndpoint"
+      uri: "http://127.0.0.1:31337"

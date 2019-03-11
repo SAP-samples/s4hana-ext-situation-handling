@@ -1,0 +1,13 @@
+--599865870B97B89F808CFDA8F7D818140
+Content-Type: application/http
+Content-Length: 1261
+content-transfer-encoding: binary
+
+HTTP/1.1 404 Not Found
+Content-Type: application/xml;charset=utf-8
+Content-Length: 1120
+dataserviceversion: 1.0
+sap-cache-control: -u
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>/IWBEP/CM_MGW_RT/020</code><message xml:lang="en">Resource not found for segment 'A_PurchaseRequisitionItemType'</message><innererror><application><component_id>MM-PUR-REQ</component_id><service_namespace>/SAP/</service_namespace><service_id>API_PURCHASEREQ_PROCESS_SRV</service_id><service_version>0001</service_version></application><transactionid>AF0DC6FADCD500C0E005C7C4929482D6</transactionid><timestamp/><Error_Resolution><SAP_Transaction/><SAP_Note>See SAP Note 1797736 for error analysis (https://service.sap.com/sap/support/notes/1797736)</SAP_Note><Batch_SAP_Note>See SAP Note 1869434 for details about working with $batch (https://service.sap.com/sap/support/notes/1869434)</Batch_SAP_Note></Error_Resolution><errordetails><errordetail><code>/IWBEP/CX_MGW_BUSI_EXCEPTION</code><message>Resource not found for segment 'A_PurchaseRequisitionItemType'</message><propertyref/><severity>error</severity><target/><transition>false</transition></errordetail></errordetails></innererror></error>
+--599865870B97B89F808CFDA8F7D818140--

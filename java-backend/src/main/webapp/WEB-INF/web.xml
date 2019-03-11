@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<!-- creates preconfigured Apache HTTP clients for SAP Cloud Platform destinations -->
+    <resource-ref>
+	    <res-ref-name>connectivityConfiguration</res-ref-name>
+	    <res-type>com.sap.core.connectivity.api.configuration.ConnectivityConfiguration</res-type>
+    </resource-ref>
+
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>
+		
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Enforce authentication</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>Everyone</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Wrapper for API_PURCHASEREQ_PROCESS_SRV OData service from S/4HANA to make $batch OData update calls</web-resource-name>
+			<url-pattern>/api/API_PURCHASEREQ_PROCESS_SRV/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>PurchaseAdmin</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>REST callback endpoint for Enterprise Messaging Service Messaging REST API</web-resource-name>
+			<url-pattern>/api/ems-rest</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>WorkflowInitiator</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Enforce authentication</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>Everyone</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<security-role>
+		<description>Enforces authentication. Implicitly assigned to every SCP user on Neo</description>
+		<role-name>Everyone</role-name>
+	</security-role>
+	
+	<security-role>
+		<description>Can start workflows using the corresponding REST service</description>
+		<role-name>WorkflowInitiator</role-name>
+	</security-role>
+	
+	<security-role>
+		<description>Can assign contracts to purchase requisitions using the corresponding REST service which makes OData batch calls to S/4HANA</description>
+		<role-name>PurchaseAdmin</role-name>
+	</security-role>
+	
+</web-app>

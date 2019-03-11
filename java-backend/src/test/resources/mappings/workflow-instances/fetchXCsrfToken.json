@@ -1,0 +1,18 @@
+{
+	"request": {
+		"method": "GET",
+		"urlPattern": "/workflow-service/rest/v1/xsrf-token",
+		"headers": {
+			"X-CSRF-Token": {
+				"equalTo": "Fetch",
+				"caseInsensitive": true
+			}
+		}
+	},
+	"response": {
+		"status": 200,
+		"headers": {
+			"X-CSRF-Token": "dummyToken"
+		}
+	}
+}

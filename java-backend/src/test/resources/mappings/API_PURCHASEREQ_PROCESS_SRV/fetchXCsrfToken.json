@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "HEAD",
+    "url": "/sap/opu/odata/sap/API_PURCHASEREQ_PROCESS_SRV",
+    "headers": {
+      "X-CSRF-Token": {
+        	"equalTo": "Fetch"
+      	}
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/html",
+      "X-CSRF-Token": "expected-x-csrf-token"
+    }
+  }
+}
