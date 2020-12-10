@@ -1,3 +1,4 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/s4hana-ext-situation-handling)](https://api.reuse.software/info/github.com/SAP-samples/s4hana-ext-situation-handling)
 # SAP S/4HANA Cloud Extensions: Situation Handling Automation
 This repository contains the sample code for the [Situation Handling Automation tutorial](http://tiny.cc/s4-situation-handling).
 
