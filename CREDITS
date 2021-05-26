@@ -5,10 +5,10 @@ terms and conditions and/or require certain notices as described below.
 Apache CXF CDI Integration (org.apache.cxf:cxf-integration-cdi:3.1.14 - http://cxf.apache.org)
 Licensed under The Apache Software License, Version 2.0
 
-API for SAP Cloud Platform (Java EE 7 Web Profile TomEE 7) (com.sap.cloud:neo-javaee7-wp-api:1.33.16 - https://hana.ondemand.com)
+API for SAP Business Technology Platform (BTP) (Java EE 7 Web Profile TomEE 7) (com.sap.cloud:neo-javaee7-wp-api:1.33.16 - https://hana.ondemand.com)
 Licensed under SAP DEVELOPER LICENSE AGREEMENT
 
-Cloud Platform - SAP CP Neo (com.sap.cloud.s4hana.cloudplatform:scp-neo:2.11.1 - https://www.sap.com/s4sdk)
+Business Technology Platform (BTP) - SAP BTP Neo (com.sap.cloud.s4hana.cloudplatform:scp-neo:2.11.1 - https://www.sap.com/s4sdk)
 Licensed under SAP DEVELOPER LICENSE AGREEMENT
 
 Feign Apache HttpClient (io.github.openfeign:feign-httpclient:10.2.0 - https://github.com/openfeign/feign/feign-httpclient)

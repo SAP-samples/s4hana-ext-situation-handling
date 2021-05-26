@@ -49,7 +49,7 @@ public class EnterpriseMessagingController {
 	 * 
 	 * @see <a href=
 	 *      "https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/6a0e4c77e3014acb8738af039bd9df71.html">SAP
-	 *      Cloud Platform Enterprise Messaging service documentation on SAP
+	 *      Business Technology Platform (BTP) Enterprise Messaging service documentation on SAP
 	 *      Help Portal</a>
 	 */
 	@POST	
@@ -98,7 +98,7 @@ public class EnterpriseMessagingController {
 	 * 
 	 * @see <a href=
 	 *      "https://help.sap.com/viewer/bf82e6b26456494cbdd197057c09979f/Cloud/en-US/6a0e4c77e3014acb8738af039bd9df71.html">SAP
-	 *      Cloud Platform Enterprise Messaging service documentation on SAP
+	 *      Business Technology Platform (BTP) Enterprise Messaging service documentation on SAP
 	 *      Help Portal</a>
 	 */
 	@OPTIONS

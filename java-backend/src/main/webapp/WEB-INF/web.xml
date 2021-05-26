@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
 
-	<!-- creates preconfigured Apache HTTP clients for SAP Cloud Platform destinations -->
+	<!-- creates preconfigured Apache HTTP clients for SAP Business Technology Platform (BTP) destinations -->
     <resource-ref>
 	    <res-ref-name>connectivityConfiguration</res-ref-name>
 	    <res-type>com.sap.core.connectivity.api.configuration.ConnectivityConfiguration</res-type>
@@ -55,7 +55,7 @@
 	</security-constraint>
 	
 	<security-role>
-		<description>Enforces authentication. Implicitly assigned to every SCP user on Neo</description>
+		<description>Enforces authentication. Implicitly assigned to every BTP user on Neo</description>
 		<role-name>Everyone</role-name>
 	</security-role>
 	

@@ -10,7 +10,7 @@ The [Situation Handling Automation tutorial](http://tiny.cc/s4-situation-handlin
 
 Every time a contract is created or changed, the system automatically checks whether there are purchase requisitions without a source of supply. Persons responsible receive a notification and can assign the contract as a source of supply to the purchase requisitions.
 
-With this extension sample, the manual assignment is automated based on business rules maintained in the SAP SCP rules engine using the context information of business documents. In the sample, the rule is based on the Material Group belonging to the requested product. 
+With this extension sample, the manual assignment is automated based on business rules maintained in the SAP BTP rules engine using the context information of business documents. In the sample, the rule is based on the Material Group belonging to the requested product. 
 
 
 #### SAP Extensibility Explorer
@@ -21,8 +21,8 @@ SAP Extensibility Explorer is a central place where anyone involved in the exten
 
 Requirements
 -------------
-- An SAP Cloud Platform subaccount in the Neo environment with the Workflow, Business Rules and Portal service enabled and an SAP Cloud Platform Java server of any size.
-- An SAP Cloud Platform subaccount in the Cloud Foundry environment with the Enterprise Messaging service enabled.
+- An SAP Business Technology Platform (BTP) subaccount in the Neo environment with the Workflow, Business Rules and Portal service enabled and an SAP Business Technology Platform (BTP) Java server of any size.
+- An SAP Business Technology Platform (BTP) subaccount in the Cloud Foundry environment with the Enterprise Messaging service enabled.
 - An SAP S/4HANA Cloud tenant. **This is a commercial paid product.**
 - [Java SE 8 Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) to compile the Java application.
 - [Apache Maven](http://maven.apache.org/download.cgi) to build the Java application.
@@ -36,7 +36,7 @@ This repository is a part of the [Download the Application](https://help.sap.com
 
 Known issues
 ---------------------
-If you are working with an SAP Cloud Platform _Trial_ account, you must add the following 2 properties to the destination so that the connection to SAP S/4HANA Cloud works:
+If you are working with an SAP Business Technology Platform_Trial_ account, you must add the following 2 properties to the destination so that the connection to SAP S/4HANA Cloud works:
 ```
 proxyHost = proxy-trial.od.sap.biz
 proxyPort = 8080

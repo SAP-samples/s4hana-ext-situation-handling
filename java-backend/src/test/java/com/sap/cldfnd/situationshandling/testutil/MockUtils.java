@@ -23,7 +23,7 @@ import com.sap.cloud.sdk.cloudplatform.security.user.User;
 import com.sap.cloud.sdk.testutil.MockUtil;
 
 /**
- * JUnit {@link ClassRule} that mocks SAP Cloud Platform environment for local
+ * JUnit {@link ClassRule} that mocks SAPBusiness Technology Platform (BTP) environment for local
  * testing.
  * 
  * @see ClassRule @ClassRule annotation

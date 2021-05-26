@@ -37,7 +37,7 @@ public class DestinationHelper {
 	/**
 	 * Fetches X-CSRF-Token making a {@code GET} call with
 	 * {@code X-CSRF-Token: Fetch} header to the {@code xCsrfTokenServicePath}
-	 * of SAP Cloud Platform {@code destination}
+	 * of SAP Business Technology Platform (BTP) {@code destination}
 	 * 
 	 * @return X-CSRF-Token fetched from the {@code destination} using a service
 	 *         located on {@code xCsrfTokenServicePath}
